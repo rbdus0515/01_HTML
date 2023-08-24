@@ -8,61 +8,67 @@
 </head>
 
 <body>
-    <form>
-    고객명 : <input>
-    <br>
-    <br>
-    전화번호 : <input type="tel">
-    <br>
-    <br>
-    <strong>E-amil</strong> : <input type="email">
-    <br>
-    <br>
-    <form>
-        피자선택 :
-        <form>
-            <select>
-                <option value="피자선택">피자선택를 선택하세요</option>
-                <option value="피자1">피자1</option>
-                <option value="피자2">피자2</option>
-                <option value="피자3">피자3</option>
-            </select>
-        </form>
+    <form action="">
+        <label>고객명 : </label>
+        <input type="text" name="clientName"><br><br>
 
-        <form>
-            <fieldset>
-                <legend>피자 사이즈</legend>
-                <input type="radio" name="size" id="Small" value="S"> <label for="Small"><strong>Small</strong></label>
-                <br>
-                <br>
-                <input type="radio" name="size" id="Medium" value="M"> <label
-                    for="Medium"><strong>Medium</strong></label>
-                <br>
-                <br>
-                <input type="radio" name="size" id="Large" value="L"> <label for="Large"><strong>Large</strong></label>
-            </fieldset>
-        </form>
+        <label>전화번호 :</label>
+        <input type="tel" name="clientPhone"><br><br>
 
-        <form>
-            <fieldset>
-                <legend>토핑 선택</legend>
-                <input type="checkbox" name="토핑" id="베이컨" value="베이컨"> <label for="베이컨">베이컨</label>
-                <br>
-                <br>
-                <input type="checkbox" name="토핑" id="치즈" value="치즈"> <label for="치즈">치즈</label>
-                <br>
-                <br>
-                <input type="checkbox" name="토핑" id="양파" value="양파"> <label for="양파">양파</label>
-                <br>
-                <br>
-                <input type="checkbox" name="토핑" id="버섯" value="버섯"> <label for="버섯">버섯</label>
-            </fieldset>
-        </form>
+        <label>E-mail :</label>
+        <input type="email" name="clientEmail"><br><br>
+
+        <label>피자선택 : </label>
+        <select name="pizza">
+            <option value="cheese">치즈 피자</option>
+            <option value="pepperoni">페퍼로니 피자</option>
+            <option value="patato">포테이토 피자</option>
+            <option value="sweetp">고구마 피자</option>
+            <option selected>피자를 선택하세요</option>
+        </select>
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <label>
+                <input type="radio" name="size" value="small">
+                Small
+            </label><br><br>
+            <label>
+                <input type="radio" name="size" value="medium">
+                Medium
+            </label><br><br>
+            <label>
+                <input type="radio" name="size" value="large">
+                Large
+            </label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <label>
+                <input type="checkbox" name="topping" value="bacon">
+                베이컨
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="topping" value="cheese">
+                치즈
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="topping" value="onion">
+                양파
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="topping" value="mushroom">
+                버섯
+            </label><br><br>
+        </fieldset>
         <br>
-        희망 배송 시간 : <input type="time">
-        <br>
-        <br>
-        배송시 요청사항 : <textarea rows="4" cols="25"></textarea>
+        희망배송시간 :
+        <input type="time"><br><br>
+
+        배송시 요청사항 : <textarea rows="3"></textarea><br><br>
+
+        <button>주문하기</button>
+
 
     </form>
 </body>
