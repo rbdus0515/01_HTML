@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_HTML연습문제2</title>
+</head>
+<body>
+
+    <form action="">
+
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>
+                    <label>납품자명 : </label>
+                    <input type="text" name="name">
+                </li><br>
+                <li>
+                    <label>Email : </label>
+                    <input type="email" name="email" placeholder="answer@naevr.com">
+                </li><br>
+                <li>
+                    <label>홈페이지 : </label>
+                    <input type="url" name="homepage" value="https://">
+                </li><br>
+                <li>
+                    <label>지역 : </label>
+                    <select name="lo">
+                            <option>서울</option>
+                            <option>대구</option>
+                            <option>대전</option>
+                            <option selected>부산</option>
+                            <option>강원</option>
+                    </select>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>
+                    <label>상품명 : </label>
+                    <input name="상품명">
+                </li><br>
+                <li>
+                    <label>납품수량 : </label>
+                    <input value="최소 100" min="100">
+                </li><br>
+                <li>
+                    <label>납품등급 : </label>
+                    <input type="range">
+                </li><br>
+                <li>
+                    <label>기타사항 : </label>
+                    <textarea name="etc" rows="5"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+    <button>send message</button>
+
+
+
+
+    </form>
+    
+</body>
+</html>

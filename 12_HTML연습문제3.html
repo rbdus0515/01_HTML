@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_HTML연습문제3</title>
+</head>
+
+<body>
+    <h1>회원 가입</h1>
+    <br>
+    <form action="">
+
+
+
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td>
+                        <input placeholder="아이디 10글자 이내">
+                    </td>
+                    <td>
+                        <button type="button">중복 확인</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호</th>
+                    <td colspan="2">
+                        <input size="30" type="password" placeholder="영문,숫자,특수문자 포함 8자 이상">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td colspan="2">
+                        <input size="30" type="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="email">
+                    </td>
+                    <td>
+                        <select>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option selected>직접입력</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>추가 정보</legend>
+            프로필 사진 <button>파일 선택</button> <small>선택된 파일 없음</small> <br><br>
+            성별 : <label for="F">여자</label> <input type="radio" name="gender" id="F" value="F">
+                    <label for="M">남자</label> <input type="radio" name="gender" id="M" value="M"> <br><br>
+            
+            <label>
+                <input type="radio" value="man" name="gender"> 남자
+            </label>
+            <label>
+                <input type="radio" value="woman" name="gender"> 여자
+            </label>
+            
+            <br><br>
+            생년월일 : <input type="date" name="dateIn"> <br><br>
+
+            취미 <br>
+            <input type="checkbox" name="취미" id="야구" value="야구"> <label for="야구">야구</label> &nbsp;
+            <input type="checkbox" name="취미" id="농구" value="농구"> <label for="농구">농구</label> &nbsp;
+            <input type="checkbox" name="취미" id="축구" value="축구"> <label for="축구">축구</label> &nbsp; <br>
+            <input type="checkbox" name="취미" id="공부" value="공부"> <label for="공부">공부</label> &nbsp;
+            <input type="checkbox" name="취미" id="음악감상" value="음악감상"> <label for="음악감상">음악감상</label> &nbsp; <br>
+            <input type="checkbox" name="취미" id="기타" value="기타">  <label for="기타">기타</label> <input> &nbsp; <br><br>
+            
+            <label>
+                <input type="checkbox" name="hobby" value="basketball">
+            </label>
+            &nbsp;
+
+            자기소개 <br>
+            <textarea rows="15" cols="60" style="resize: none;"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">회원가입</button>
+        <button type="reset">다시입력</button>
+        <button type="button">이전으로</button>
+
+    </form>
+
+</body>
+
+</html>
